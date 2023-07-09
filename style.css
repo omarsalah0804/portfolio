@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Bacasime Antique", serif;
+}
+
+nav {
+    background-color: #4c3d3d;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    padding: 0 30px 0 80px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 9px;
+    border-radius: 12px;
+}
+
+a:hover {
+    background-color: #c07f00;
+    color: #352a2a;
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* main  s */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./photo/Untitled\ design\ \(4\)\ \(1\).png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+    padding: 200px 100px;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-shadow: #040000;
+    margin-top: 170px;
+}
+
+#my-name {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c07f00;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffd95a;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: #040000;
+}
+
+.main-btn {
+    color: #4c3d3d;
+    background-color: #ffd95a;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.main-btn:hover {
+    color: #4c3d3d;
+    background-color: #c07f00;
+    transform: scale(1.1);
+}
+
+/* educotion */
+.educotion {
+    background-color: #fff7d4;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    float: left;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #c07f00;
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.uv {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 35px rgba(1 1 1 / 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.uv:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #c07f00;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* projrcts */
+
+.title2 {
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    color: #c07f00;
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.projects {
+    background-color: #352a2a;
+}
+
+.projects .cottent {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 5px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+    text-align: center;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.link-portfolio {
+    font-size: 20px;
+    text-decoration: none;
+    color: #c07f00;
+}
+
+.link-portfolio:hover {
+    background-color: #c07f00;
+    font-size: 22px;
+    border-radius: 7px;
+    color: #352a2a;
+}
+
+/* skills */
+
+.uv1 {
+    background-color: #352a2a;
+    width: 15.25em;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.uv1:hover {
+    transform: scale(1.3);
+}
+
+.skills {
+    background-color: #352a2a;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card img {
+    width: 200px;
+    height: 200px;
+    transition: 0.6s ease;
+    padding: 1em;
+}
+
+.skill-card img:hover {
+    transform: scale(1.1);
+}
+
+/* contact */
+#contact{
+   background-color: #fff7d4;
+
+}
+
+
+.icon-contact a {
+    text-decoration: none;
+    align-items: center;
+    background-color: #fff;
+    margin: 40px;
+}
+
+.icon-contact {
+    align-items: center;
+    margin-left: 25px;
+}
+
+.icon-contact i {
+    text-decoration: none;
+    text-align: center;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+    font-size: 100px;
+    padding: 0 30px;
+}
+
+.cards-contact {
+    color: #000000;
+    text-align: center;
+}
+
+.cards-contact p {
+    color: #000000;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*footer  */
+
+.footer {
+    background-color: #352a2a;
+    color: #fff;
+    padding: 0.7em;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+}
+
+.footer-title span {
+    color: #c07f00;
+    text-transform: uppercase;
+}
+
+/* media for navbar */
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .main {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #4c3d3d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.active {
+        background: none;
+        color: #c07f00;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .main {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-btn {
+        margin-bottom: 0;
+    }
+
+    .main h2 {
+        margin-top: 120px;
+    }
+}
